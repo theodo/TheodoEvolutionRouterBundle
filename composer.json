@@ -1,0 +1,43 @@
+{
+    "name": "theodo/evolution-router-bundle",
+    "type": "symfony-bundle",
+    "description": "The \"Theodo Evolution Router\" bundle",
+    "keywords": [],
+    "homepage": "http://www.theodo.fr",
+    "authors": [
+        {
+            "name": "Theodo",
+            "homepage": "http://www.theodo.fr"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "Theodo\\Evolution\\RouterBundle": ""
+        }
+    },
+    "require": {
+        "php": ">=5.3.3",
+        "symfony/http-kernel": "2.1.*",
+        "symfony/dependency-injection": "2.1.*",
+        "symfony/console": "2.1.*",
+        "symfony/config": "2.1.*"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets"
+        ],
+        "post-update-cmd": [
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets"
+        ]
+    },
+    "minimum-stability": "dev",
+    "target-dir": "Theodo/Evolution/RouterBundle",
+    "extra": {
+        "symfony-app-dir": "../../app",
+        "symfony-web-dir": "../../web"
+    }
+}
