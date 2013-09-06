@@ -1,5 +1,5 @@
 {
-    "name": "theodo/evolution-router-bundle",
+    "name": "theodo-evolution/router-bundle",
     "type": "symfony-bundle",
     "description": "The \"Theodo Evolution Router\" bundle",
     "keywords": [],
@@ -17,10 +17,10 @@
     },
     "require": {
         "php": ">=5.3.3",
-        "symfony/http-kernel": "2.1.*",
-        "symfony/dependency-injection": "2.1.*",
-        "symfony/console": "2.1.*",
-        "symfony/config": "2.1.*"
+        "symfony/http-kernel": ">=2.1",
+        "symfony/dependency-injection": ">=2.1",
+        "symfony/console": ">=2.1",
+        "symfony/config": ">=2.1"
     },
     "scripts": {
         "post-install-cmd": [
